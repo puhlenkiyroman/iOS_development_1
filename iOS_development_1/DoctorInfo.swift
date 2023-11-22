@@ -45,7 +45,7 @@ struct DoctorInfo: View {
             }
             .padding(.top, 16)
         }
-        .frame(width: imageSize.frameSize, alignment: .top)
+        .frame(width: imageSize.frameWidthSize, height: imageSize.frameHeightSize, alignment: .top)
         .padding(20)
         .background(Color.cardBlue)
         .cornerRadius(12)
