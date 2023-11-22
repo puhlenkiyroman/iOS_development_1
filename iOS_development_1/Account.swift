@@ -8,7 +8,6 @@ struct Account: View {
                     Text("Hello,")
                         .font(.regularText)
                         .foregroundColor(Color.textGrey)
-                    
                     Text("Hi James")
                         .font(.boldTitle)
                         .foregroundColor(Color.textBlack)
@@ -16,14 +15,14 @@ struct Account: View {
                 Spacer()
                 Image("account_photo")
                     .resizable()
-                    .frame(width: 56, height: 56)
+                    .frame(width: imageSize.defaultIconSize, height: imageSize.defaultIconSize)
                     .clipShape(Circle())
-                
             }
-            .padding(.top, 11)
-            .padding(.horizontal, 24)
-            Spacer()
         }
+        .padding([.leading, .trailing], 20)
+        .padding(.bottom, 32)
+        .padding(.top, 20)
+        
     }
 }
 

@@ -13,6 +13,9 @@
 		24C78B6B2B062B810069E12D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C78B6A2B062B810069E12D /* Preview Assets.xcassets */; };
 		24C78B772B0645500069E12D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78B762B0645500069E12D /* Account.swift */; };
 		24C78B842B0E50C70069E12D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78B832B0E50C70069E12D /* Extensions.swift */; };
+		24C78B862B0E51E80069E12D /* DoctorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78B852B0E51E80069E12D /* DoctorInfo.swift */; };
+		24C78B902B0E67940069E12D /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 24C78B8F2B0E67940069E12D /* Fonts */; };
+		24C78B942B0E6A180069E12D /* imageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78B932B0E6A180069E12D /* imageSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		24C78B6A2B062B810069E12D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24C78B762B0645500069E12D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		24C78B832B0E50C70069E12D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		24C78B852B0E51E80069E12D /* DoctorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorInfo.swift; sourceTree = "<group>"; };
+		24C78B8F2B0E67940069E12D /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../../../Downloads/Lab-2/DoctorLabIOS/Fonts"; sourceTree = "<group>"; };
+		24C78B932B0E6A180069E12D /* imageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +61,13 @@
 		24C78B622B062B7E0069E12D /* iOS_development_1 */ = {
 			isa = PBXGroup;
 			children = (
-				24C78B822B0E50AE0069E12D /* DesignSystem */,
+				24C78B8F2B0E67940069E12D /* Fonts */,
 				24C78B632B062B7E0069E12D /* iOS_development_1App.swift */,
+				24C78B832B0E50C70069E12D /* Extensions.swift */,
+				24C78B932B0E6A180069E12D /* imageSize.swift */,
 				24C78B652B062B7E0069E12D /* ContentView.swift */,
 				24C78B762B0645500069E12D /* Account.swift */,
+				24C78B852B0E51E80069E12D /* DoctorInfo.swift */,
 				24C78B672B062B810069E12D /* Assets.xcassets */,
 				24C78B692B062B810069E12D /* Preview Content */,
 			);
@@ -71,14 +80,6 @@
 				24C78B6A2B062B810069E12D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		24C78B822B0E50AE0069E12D /* DesignSystem */ = {
-			isa = PBXGroup;
-			children = (
-				24C78B832B0E50C70069E12D /* Extensions.swift */,
-			);
-			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C78B902B0E67940069E12D /* Fonts in Resources */,
 				24C78B6B2B062B810069E12D /* Preview Assets.xcassets in Resources */,
 				24C78B682B062B810069E12D /* Assets.xcassets in Resources */,
 			);
@@ -155,6 +157,8 @@
 				24C78B642B062B7E0069E12D /* iOS_development_1App.swift in Sources */,
 				24C78B772B0645500069E12D /* Account.swift in Sources */,
 				24C78B842B0E50C70069E12D /* Extensions.swift in Sources */,
+				24C78B942B0E6A180069E12D /* imageSize.swift in Sources */,
+				24C78B862B0E51E80069E12D /* DoctorInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
