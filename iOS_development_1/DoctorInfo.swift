@@ -24,24 +24,28 @@ struct DoctorInfo: View {
                 
                 Spacer()
                 
-                Image("arrow-right")
+                Image("arrow_right")
+                    .resizable()
                     .frame(width: imageSize.regularIconSize, height: imageSize.regularIconSize)
             }
-            .padding(.bottom, 16)
+            .padding(.bottom, 10)
             
             Divider().overlay(Color.white.opacity(0.8))
             
             HStack {
-                Image("calendar-2").padding(.trailing, 8) // ne ska4eno
+                Image("calendar-2")
+                    .padding(.trailing, 4)
                 Text("Sunday, 12 June")
                     .font(.smallText)
                     .foregroundColor(.white)
-                    .padding(.trailing, 17)
+                    .padding(.trailing, 8)
                 
-                Image("clock").padding(.trailing, 8) // ne ska4eno
+                Image("clock")
+                    .padding(.trailing, 4)
                 Text("11:00 - 12:00 AM")
                     .font(.smallText)
                     .foregroundColor(.white)
+                    .padding(.trailing, 8)
             }
             .padding(.top, 16)
         }

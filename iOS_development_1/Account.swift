@@ -20,7 +20,7 @@ struct Account: View {
             }
         }
         .padding([.leading, .trailing], 20)
-        .padding(.bottom, 32)
+        .padding(.bottom, 20)
         .padding(.top, 20)
         
     }
