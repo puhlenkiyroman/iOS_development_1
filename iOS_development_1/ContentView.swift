@@ -8,6 +8,7 @@ struct ContentView: View {
             .padding([.leading, .trailing], 24)
         SearchDoctor()
         Buttons()
+        NearDoctor(doctorName: "Dr. Joseph Brostito", doctorSpecialisation: "Dental Specialist", review: "4,8 (120 Reviews)", time: "Open at 17.00")
         Spacer()
     }
 }

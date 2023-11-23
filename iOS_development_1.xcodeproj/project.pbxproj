@@ -19,6 +19,7 @@
 		3F7FF5022B0F3047006BF0ED /* FontFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FF5012B0F3047006BF0ED /* FontFile.swift */; };
 		3F7FF5042B0F327F006BF0ED /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FF5032B0F327F006BF0ED /* Buttons.swift */; };
 		3F7FF5062B0F35C9006BF0ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F7FF5052B0F35C9006BF0ED /* Localizable.strings */; };
+		3F7FF50A2B0F5DFF006BF0ED /* NearDoctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FF5092B0F5DFF006BF0ED /* NearDoctor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		3F7FF5012B0F3047006BF0ED /* FontFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFile.swift; sourceTree = "<group>"; };
 		3F7FF5032B0F327F006BF0ED /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		3F7FF5052B0F35C9006BF0ED /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3F7FF5092B0F5DFF006BF0ED /* NearDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				3F7FF5052B0F35C9006BF0ED /* Localizable.strings */,
 				24C78B672B062B810069E12D /* Assets.xcassets */,
 				24C78B692B062B810069E12D /* Preview Content */,
+				3F7FF5092B0F5DFF006BF0ED /* NearDoctor.swift */,
 			);
 			path = iOS_development_1;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				24C78B642B062B7E0069E12D /* iOS_development_1App.swift in Sources */,
 				24C78B772B0645500069E12D /* Account.swift in Sources */,
 				24C78B842B0E50C70069E12D /* Extensions.swift in Sources */,
+				3F7FF50A2B0F5DFF006BF0ED /* NearDoctor.swift in Sources */,
 				24C78B942B0E6A180069E12D /* imageSize.swift in Sources */,
 				24C78B862B0E51E80069E12D /* DoctorInfo.swift in Sources */,
 				3F7FF4FD2B0F179D006BF0ED /* SearchDoctor.swift in Sources */,

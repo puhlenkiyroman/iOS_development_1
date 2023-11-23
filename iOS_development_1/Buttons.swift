@@ -18,7 +18,7 @@ struct Buttons: View {
                 .cornerRadius(100)
                 
                 Text(NSLocalizedString("button1", comment: ""))
-                    .font(FontFile.Fonts.poppins_medium_15)           .foregroundColor(Color.buttonsGrey)
+                    .font(FontFile.Fonts.poppins_medium_15)           .foregroundColor(Color.textGrey)
             }
             .padding(0)
         }
@@ -36,7 +36,7 @@ struct Buttons: View {
                 .cornerRadius(100)
                 
                 Text(NSLocalizedString("button2", comment: ""))
-                    .font(FontFile.Fonts.poppins_medium_15)                .foregroundColor(Color.buttonsGrey)
+                    .font(FontFile.Fonts.poppins_medium_15)                .foregroundColor(Color.textGrey)
             }
             .padding(0)
         }
@@ -54,7 +54,7 @@ struct Buttons: View {
                 .cornerRadius(100)
                 
                 Text(NSLocalizedString("button3", comment: ""))
-                    .font(FontFile.Fonts.poppins_medium_15)                .foregroundColor(Color.buttonsGrey)
+                    .font(FontFile.Fonts.poppins_medium_15)                .foregroundColor(Color.textGrey)
             }
             .padding(0)
         }
@@ -72,7 +72,7 @@ struct Buttons: View {
                 .background(Color.searchGrey)
                 .cornerRadius(100)
                 Text(NSLocalizedString("button4", comment: ""))
-                    .font(FontFile.Fonts.poppins_medium_15)               .foregroundColor(Color.buttonsGrey)
+                    .font(FontFile.Fonts.poppins_medium_15)               .foregroundColor(Color.textGrey)
             }
             .padding(0)
         }

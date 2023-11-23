@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct Account: View {
+    @State private var isButtonClicked = false
     var username: String
     var body: some View {
         VStack {
@@ -13,10 +14,14 @@ struct Account: View {
                         .foregroundColor(Color.textBlack)
                 }
                 Spacer()
-                Image("account_photo")
-                    .resizable()
-                    .frame(width: imageSize.defaultWidthIconSize, height: imageSize.defaultWidthIconSize)
-                    .clipShape(Circle())
+                Button(action: {
+                    self.isButtonClicked.toggle()
+                }){
+                    Image("account_photo")
+                        .resizable()
+                        .frame(width: imageSize.defaultWidthIconSize, height: imageSize.defaultWidthIconSize)
+                        .clipShape(Circle())
+                }
             }
         }
         .padding([.leading, .trailing], 20)
