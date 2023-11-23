@@ -1,5 +1,3 @@
 "welcome_message" = "Hello,";
-"greetings" = "Hi James";
-"date" = "Sunday, 12 June";
-"time" = "11:00 - 12:00 AM";
+"Hi " = "Hi ";
 "text_field" = "Search doctor or health issue";

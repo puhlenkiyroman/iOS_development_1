@@ -1,20 +1,21 @@
 import SwiftUI
 
 struct Account: View {
+    var username: String
     var body: some View {
         VStack {
             HStack {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 6) {
                     Text(NSLocalizedString("welcome_message", comment: ""))
-                        //.font(FontFile.Fonts.poppins_regular_14)
+                        .font(FontFile.Fonts.poppins_regular_16)
                         .foregroundColor(Color.textGrey)
-                    Text(NSLocalizedString("greetings", comment: ""))     //.font(.poppins_regular_14)
+                    Text(NSLocalizedString("Hi " + username, comment: ""))   .font(FontFile.Fonts.poppins_bold_20)
                         .foregroundColor(Color.textBlack)
                 }
                 Spacer()
                 Image("account_photo")
                     .resizable()
-                    .frame(width: imageSize.defaultIconSize, height: imageSize.defaultIconSize)
+                    .frame(width: imageSize.defaultWidthIconSize, height: imageSize.defaultWidthIconSize)
                     .clipShape(Circle())
             }
         }
@@ -27,6 +28,6 @@ struct Account: View {
 
 struct Account_Previews: PreviewProvider {
     static var previews: some View {
-        Account()
+        Account(username: "Roman")
     }
 }

@@ -4,25 +4,29 @@ struct DoctorInfo: View {
     @State private var isButtonClicked = false
     var doctorName: String
     var doctorSpecialisation: String
+    var date: String
+    var time: String
     var body : some View {
         VStack() {
             HStack {
-                Image("doctor_photo").resizable()
-                    .frame(width: imageSize.defaultIconSize, height: 72)
-                    .aspectRatio(contentMode: .fill)
-                    .mask(Circle())
-                    .clipped()
-                    .background(Circle().fill(Color.white))
-                
-                VStack(alignment: .leading, spacing: 16) {
-                    Text(doctorName)
-                        //.font(.boldTitle)
-                        .foregroundColor(.white)
-                    Text(doctorSpecialisation)
-                        //.font(.regularText)
-                        .foregroundColor(.white)
+                Button(action: {
+                    self.isButtonClicked.toggle()
+                }){
+                    Image("doctor_photo").resizable()
+                        .frame(width: imageSize.defaultWidthIconSize, height: imageSize.defaultHeightIconSize)
+                        .aspectRatio(contentMode: .fill)
+                        .mask(Circle())
+                        .clipped()
+                        .background(Circle().fill(Color.white))
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text(doctorName)
+                            .font(FontFile.Fonts.poppins_regular_16)
+                            .foregroundColor(.white)
+                        Text(doctorSpecialisation)
+                            .font(FontFile.Fonts.poppins_regular_14)
+                            .foregroundColor(.white)
+                    }
                 }
-                
                 Spacer()
                 Button(action: {
                     self.isButtonClicked.toggle()
@@ -32,20 +36,21 @@ struct DoctorInfo: View {
                         .frame(width: imageSize.regularIconSize, height: imageSize.regularIconSize)
                 }
             }
-            .padding(.bottom, 10)
+            .padding(.bottom, 5)
             
             Divider().overlay(Color.white.opacity(0.8))
             
             HStack {
                 Image("calendar-2")
                     .padding(.trailing, 4)
-                Text(NSLocalizedString("date", comment: ""))         //.font(.smallText)
+                Text(date)                  .font(FontFile.Fonts.poppins_regular_12)
                     .foregroundColor(.white)
                     .padding(.trailing, 8)
                 
                 Image("clock")
                     .padding(.trailing, 4)
-                Text(NSLocalizedString("text", comment: ""))         //.font(.smallText)
+                Text(time)
+                    .font(FontFile.Fonts.poppins_regular_12)
                     .foregroundColor(.white)
                     .padding(.trailing, 8)
             }
@@ -61,6 +66,6 @@ struct DoctorInfo: View {
 
 struct DoctorInfo_Previews: PreviewProvider {
     static var previews: some View {
-        DoctorInfo(doctorName: "Dr. Imran Syahir", doctorSpecialisation: "General Doctor")
+        DoctorInfo(doctorName: "Dr. Imran Syahir", doctorSpecialisation: "General Doctor", date: "Sunday, 12 June", time: "11:00 - 12:00 AM")
     }
 }

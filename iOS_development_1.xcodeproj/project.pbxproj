@@ -32,9 +32,6 @@
 		24C78B852B0E51E80069E12D /* DoctorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorInfo.swift; sourceTree = "<group>"; };
 		24C78B932B0E6A180069E12D /* imageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSize.swift; sourceTree = "<group>"; };
 		3F7FF4FC2B0F179D006BF0ED /* SearchDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDoctor.swift; sourceTree = "<group>"; };
-		3F7FF4FE2B0F2E03006BF0ED /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.ttf"; path = "../../../Downloads/Poppins-Medium.ttf"; sourceTree = "<group>"; };
-		3F7FF4FF2B0F2E17006BF0ED /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../Downloads/Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		3F7FF5002B0F2E23006BF0ED /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "../../../Downloads/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		3F7FF5012B0F3047006BF0ED /* FontFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFile.swift; sourceTree = "<group>"; };
 		3F7FF5032B0F327F006BF0ED /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		3F7FF5052B0F35C9006BF0ED /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -81,9 +78,6 @@
 				3F7FF5032B0F327F006BF0ED /* Buttons.swift */,
 				3F7FF5052B0F35C9006BF0ED /* Localizable.strings */,
 				24C78B672B062B810069E12D /* Assets.xcassets */,
-				3F7FF4FF2B0F2E17006BF0ED /* Poppins-Regular.ttf */,
-				3F7FF5002B0F2E23006BF0ED /* Poppins-Bold.ttf */,
-				3F7FF4FE2B0F2E03006BF0ED /* Poppins-Medium.ttf */,
 				24C78B692B062B810069E12D /* Preview Content */,
 			);
 			path = iOS_development_1;

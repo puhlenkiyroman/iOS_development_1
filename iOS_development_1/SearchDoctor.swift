@@ -8,8 +8,7 @@ struct SearchDoctor: View {
                 Image("search-normal")
                     .padding(.trailing, 4)
                 TextField(NSLocalizedString("text_field", comment: ""), text: $isSearch)
-                    //.font(.poppins_regular_14)
-                    .foregroundColor(Color.textGrey)
+                    .font(FontFile.Fonts.poppins_medium_15)            .foregroundColor(Color.textGrey)
             }
             .padding(16)
             .frame(width: imageSize.searchWidthSize, alignment: .leading)
