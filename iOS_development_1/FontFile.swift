@@ -3,9 +3,9 @@ import SwiftUI
 struct FontFile {
     struct Fonts {
         static let poppins_bold_16 = Font.custom(
-            "Poppins-Bold", size: 16)
+            "Poppins-Bold", size: 16).weight(.bold)
         static let poppins_bold_20 = Font.custom(
-            "Poppins-Bold", size: 20)
+            "Poppins-Bold", size: 20).weight(.bold)
         static let poppins_semibold_16 = Font.custom(
             "Poppins-SemiBold", size: 16)
         static let poppins_regular_12 = Font.custom(

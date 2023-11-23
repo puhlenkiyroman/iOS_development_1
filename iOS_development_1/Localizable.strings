@@ -1,3 +1,7 @@
 "welcome_message" = "Hello,";
 "Hi " = "Hi ";
 "text_field" = "Search doctor or health issue";
+"button1" = "Covid 19";
+"button2" = "Doctor";
+"button3" = "Medicine";
+"button4" = "Hospital";
