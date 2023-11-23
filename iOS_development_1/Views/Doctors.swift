@@ -1,27 +1,20 @@
+//
+//  Doctors.swift
+//  iOS_development_1
+//
+//  Created by Роман on 23.11.2023.
+//
+
 import SwiftUI
 
-struct NearDoctor: View {
+struct Doctors: View {
     @State private var isButtonClicked = false
     var doctorName: String
     var doctorSpecialisation: String
     var review: String
     var time: String
-    var body : some View {
-        VStack {
-            HStack {
-                VStack(alignment: .leading, spacing: 6) {
-                    Text("Near Doctor")
-                        .font(FontFile.Fonts.poppins_semibold_16)
-                      .foregroundColor(Color.textBlack)
-                }
-                Spacer()
-                }
-        }
-        .padding([.leading, .trailing], 40)
-        .padding(.bottom, 20)
-        
-        VStack() {
-            
+    var body: some View {
+        VStack(alignment: .center) {
             HStack {
                 Button(action: {
                     self.isButtonClicked.toggle()
@@ -42,30 +35,36 @@ struct NearDoctor: View {
                     }
                 }
                 Spacer()
-                Button(action: {
-                    self.isButtonClicked.toggle()
-                }){
-                    Image("arrow_right")
-                        .resizable()
-                        .frame(width: imageSize.regularIconSize, height: imageSize.regularIconSize)
-                }
+                Image("location")
+                    .frame(width: imageSize.smallIconSize, height: imageSize.smallIconSize)
+                Text("1.2 KM")
+                    .font(FontFile.Fonts.poppins_regular_14)
+                    .foregroundColor(Color.textGrey)
             }
             .padding(.bottom, 5)
             
             Divider().overlay(Color.white.opacity(0.8))
             
             HStack {
-                Image("calendar-2")
-                    .padding(.trailing, 4)
+                Button(action: {
+                    self.isButtonClicked.toggle()
+                }){
+                    Image("yellow-clock")
+                        .padding(.trailing, 4)
+                }
                 Text(review)                  .font(FontFile.Fonts.poppins_regular_12)
-                    .foregroundColor(Color(red: 1, green: 0.69, blue: 0.32))
+                    .foregroundColor(Color.reviewYellow)
                     .padding(.trailing, 8)
                 
-                Image("clock")
-                    .padding(.trailing, 4)
+                Button(action: {
+                    self.isButtonClicked.toggle()
+                }){
+                    Image("blue-clock")
+                        .padding(.trailing, 4)
+                }
                 Text(time)
                     .font(FontFile.Fonts.poppins_regular_12)
-                    .foregroundColor(Color(red: 0.28, green: 0.58, blue: 1))
+                    .foregroundColor(Color.cardBlue)
                     .padding(.trailing, 8)
             }
             .padding(.top, 16)
@@ -75,12 +74,12 @@ struct NearDoctor: View {
         .padding(.vertical, 20)
         .background(.white)
         .cornerRadius(12)
-        .shadow(color: Color(red: 0.35, green: 0.46, blue: 0.65).opacity(0.04), radius: 10, x: 2, y: 12)
+        .shadow(color: Color.shadowWhite.opacity(0.04), radius: 10, x: 2, y: 12)
     }
 }
 
-struct NearDoctor_Previews: PreviewProvider {
+struct Doctors_Previews: PreviewProvider {
     static var previews: some View {
-        NearDoctor(doctorName: "Dr. Joseph Brostito", doctorSpecialisation: "Dental Specialist", review: "4,8 (120 Reviews)", time: "Open at 17.00")
+        Doctors(doctorName: "Dr. Joseph Brostito", doctorSpecialisation: "Dental Specialist", review: "4,8 (120 Reviews)", time: "Open at 17.00")
     }
 }

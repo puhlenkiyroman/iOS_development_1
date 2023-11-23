@@ -77,7 +77,7 @@ struct Buttons: View {
             .padding(0)
         }
  }
-        Spacer()
+    .padding(.bottom, 32)
     }
 }
 

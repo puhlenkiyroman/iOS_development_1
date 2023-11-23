@@ -18,7 +18,7 @@ struct DoctorInfo: View {
                         .mask(Circle())
                         .clipped()
                         .background(Circle().fill(Color.white))
-                    VStack(alignment: .leading, spacing: 16) {
+                    VStack(alignment: .leading, spacing: 20) {
                         Text(doctorName)
                             .font(FontFile.Fonts.poppins_regular_16)
                             .foregroundColor(.white)
@@ -41,14 +41,22 @@ struct DoctorInfo: View {
             Divider().overlay(Color.white.opacity(0.8))
             
             HStack {
-                Image("calendar-2")
-                    .padding(.trailing, 4)
+                Button(action: {
+                    self.isButtonClicked.toggle()
+                }){
+                    Image("calendar-2")
+                        .padding(.trailing, 4)
+                }
                 Text(date)                  .font(FontFile.Fonts.poppins_regular_12)
                     .foregroundColor(.white)
                     .padding(.trailing, 8)
                 
-                Image("clock")
-                    .padding(.trailing, 4)
+                Button(action: {
+                    self.isButtonClicked.toggle()
+                }){
+                    Image("clock")
+                        .padding(.trailing, 4)
+                }
                 Text(time)
                     .font(FontFile.Fonts.poppins_regular_12)
                     .foregroundColor(.white)

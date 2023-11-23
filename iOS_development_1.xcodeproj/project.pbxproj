@@ -15,6 +15,10 @@
 		24C78B842B0E50C70069E12D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78B832B0E50C70069E12D /* Extensions.swift */; };
 		24C78B862B0E51E80069E12D /* DoctorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78B852B0E51E80069E12D /* DoctorInfo.swift */; };
 		24C78B942B0E6A180069E12D /* imageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78B932B0E6A180069E12D /* imageSize.swift */; };
+		24C78B9C2B0E80680069E12D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C78B9B2B0E80680069E12D /* Poppins-Bold.ttf */; };
+		24C78B9E2B0E808F0069E12D /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C78B9D2B0E808F0069E12D /* Poppins-Medium.ttf */; };
+		24C78BA02B0E80A60069E12D /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C78B9F2B0E80A50069E12D /* Poppins-Regular.ttf */; };
+		24C78BAC2B0FA4BE0069E12D /* Doctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78BAB2B0FA4BE0069E12D /* Doctors.swift */; };
 		3F7FF4FD2B0F179D006BF0ED /* SearchDoctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FF4FC2B0F179D006BF0ED /* SearchDoctor.swift */; };
 		3F7FF5022B0F3047006BF0ED /* FontFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FF5012B0F3047006BF0ED /* FontFile.swift */; };
 		3F7FF5042B0F327F006BF0ED /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FF5032B0F327F006BF0ED /* Buttons.swift */; };
@@ -32,6 +36,11 @@
 		24C78B832B0E50C70069E12D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		24C78B852B0E51E80069E12D /* DoctorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorInfo.swift; sourceTree = "<group>"; };
 		24C78B932B0E6A180069E12D /* imageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSize.swift; sourceTree = "<group>"; };
+		24C78B9B2B0E80680069E12D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "../../../../Downloads/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		24C78B9D2B0E808F0069E12D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Medium.ttf"; path = "../../../../Downloads/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		24C78B9F2B0E80A50069E12D /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../Downloads/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		24C78BAA2B0E880F0069E12D /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		24C78BAB2B0FA4BE0069E12D /* Doctors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctors.swift; sourceTree = "<group>"; };
 		3F7FF4FC2B0F179D006BF0ED /* SearchDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDoctor.swift; sourceTree = "<group>"; };
 		3F7FF5012B0F3047006BF0ED /* FontFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFile.swift; sourceTree = "<group>"; };
 		3F7FF5032B0F327F006BF0ED /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
@@ -69,19 +78,15 @@
 		24C78B622B062B7E0069E12D /* iOS_development_1 */ = {
 			isa = PBXGroup;
 			children = (
-				24C78B632B062B7E0069E12D /* iOS_development_1App.swift */,
+				24C78B9A2B0E80440069E12D /* CustomFonts */,
+				24C78B952B0E7E760069E12D /* Views */,
 				24C78B832B0E50C70069E12D /* Extensions.swift */,
 				24C78B932B0E6A180069E12D /* imageSize.swift */,
-				24C78B652B062B7E0069E12D /* ContentView.swift */,
-				24C78B762B0645500069E12D /* Account.swift */,
-				24C78B852B0E51E80069E12D /* DoctorInfo.swift */,
-				3F7FF4FC2B0F179D006BF0ED /* SearchDoctor.swift */,
 				3F7FF5012B0F3047006BF0ED /* FontFile.swift */,
-				3F7FF5032B0F327F006BF0ED /* Buttons.swift */,
 				3F7FF5052B0F35C9006BF0ED /* Localizable.strings */,
 				24C78B672B062B810069E12D /* Assets.xcassets */,
+				24C78B632B062B7E0069E12D /* iOS_development_1App.swift */,
 				24C78B692B062B810069E12D /* Preview Content */,
-				3F7FF5092B0F5DFF006BF0ED /* NearDoctor.swift */,
 			);
 			path = iOS_development_1;
 			sourceTree = "<group>";
@@ -92,6 +97,31 @@
 				24C78B6A2B062B810069E12D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		24C78B952B0E7E760069E12D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24C78B652B062B7E0069E12D /* ContentView.swift */,
+				24C78B762B0645500069E12D /* Account.swift */,
+				24C78B852B0E51E80069E12D /* DoctorInfo.swift */,
+				3F7FF4FC2B0F179D006BF0ED /* SearchDoctor.swift */,
+				3F7FF5032B0F327F006BF0ED /* Buttons.swift */,
+				3F7FF5092B0F5DFF006BF0ED /* NearDoctor.swift */,
+				24C78BAB2B0FA4BE0069E12D /* Doctors.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24C78B9A2B0E80440069E12D /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				24C78BAA2B0E880F0069E12D /* info.plist */,
+				24C78B9F2B0E80A50069E12D /* Poppins-Regular.ttf */,
+				24C78B9D2B0E808F0069E12D /* Poppins-Medium.ttf */,
+				24C78B9B2B0E80680069E12D /* Poppins-Bold.ttf */,
+			);
+			path = CustomFonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +185,9 @@
 				24C78B6B2B062B810069E12D /* Preview Assets.xcassets in Resources */,
 				24C78B682B062B810069E12D /* Assets.xcassets in Resources */,
 				3F7FF5062B0F35C9006BF0ED /* Localizable.strings in Resources */,
+				24C78BA02B0E80A60069E12D /* Poppins-Regular.ttf in Resources */,
+				24C78B9C2B0E80680069E12D /* Poppins-Bold.ttf in Resources */,
+				24C78B9E2B0E808F0069E12D /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +204,7 @@
 				24C78B642B062B7E0069E12D /* iOS_development_1App.swift in Sources */,
 				24C78B772B0645500069E12D /* Account.swift in Sources */,
 				24C78B842B0E50C70069E12D /* Extensions.swift in Sources */,
+				24C78BAC2B0FA4BE0069E12D /* Doctors.swift in Sources */,
 				3F7FF50A2B0F5DFF006BF0ED /* NearDoctor.swift in Sources */,
 				24C78B942B0E6A180069E12D /* imageSize.swift in Sources */,
 				24C78B862B0E51E80069E12D /* DoctorInfo.swift in Sources */,
@@ -306,6 +340,7 @@
 				DEVELOPMENT_TEAM = DX48A98M64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-development-1-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -335,6 +370,7 @@
 				DEVELOPMENT_TEAM = DX48A98M64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-development-1-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

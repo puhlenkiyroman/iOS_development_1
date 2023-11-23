@@ -14,7 +14,7 @@ struct SearchDoctor: View {
             .frame(width: imageSize.searchWidthSize, alignment: .leading)
             .background(Color.searchGrey)
             .cornerRadius(12)
-            .padding(.bottom, 20)
+            .padding(.bottom, 4)
         }
 }
 struct SearchDoctor_Previews: PreviewProvider {
