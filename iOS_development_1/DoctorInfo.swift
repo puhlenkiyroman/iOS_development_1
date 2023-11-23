@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct DoctorInfo: View {
+    @State private var isButtonClicked = false
     var doctorName: String
     var doctorSpecialisation: String
     var body : some View {
@@ -15,18 +16,21 @@ struct DoctorInfo: View {
                 
                 VStack(alignment: .leading, spacing: 16) {
                     Text(doctorName)
-                        .font(.boldTitle)
+                        //.font(.boldTitle)
                         .foregroundColor(.white)
                     Text(doctorSpecialisation)
-                        .font(.regularText)
+                        //.font(.regularText)
                         .foregroundColor(.white)
                 }
                 
                 Spacer()
-                
-                Image("arrow_right")
-                    .resizable()
-                    .frame(width: imageSize.regularIconSize, height: imageSize.regularIconSize)
+                Button(action: {
+                    self.isButtonClicked.toggle()
+                }){
+                    Image("arrow_right")
+                        .resizable()
+                        .frame(width: imageSize.regularIconSize, height: imageSize.regularIconSize)
+                }
             }
             .padding(.bottom, 10)
             
@@ -35,15 +39,13 @@ struct DoctorInfo: View {
             HStack {
                 Image("calendar-2")
                     .padding(.trailing, 4)
-                Text("Sunday, 12 June")
-                    .font(.smallText)
+                Text(NSLocalizedString("date", comment: ""))         //.font(.smallText)
                     .foregroundColor(.white)
                     .padding(.trailing, 8)
                 
                 Image("clock")
                     .padding(.trailing, 4)
-                Text("11:00 - 12:00 AM")
-                    .font(.smallText)
+                Text(NSLocalizedString("text", comment: ""))         //.font(.smallText)
                     .foregroundColor(.white)
                     .padding(.trailing, 8)
             }
@@ -53,6 +55,7 @@ struct DoctorInfo: View {
         .padding(20)
         .background(Color.cardBlue)
         .cornerRadius(12)
+        .padding(.bottom, 20)
     }
 }
 

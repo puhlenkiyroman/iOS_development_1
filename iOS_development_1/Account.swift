@@ -5,11 +5,10 @@ struct Account: View {
         VStack {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Hello,")
-                        .font(.regularText)
+                    Text(NSLocalizedString("welcome_message", comment: ""))
+                        //.font(FontFile.Fonts.poppins_regular_14)
                         .foregroundColor(Color.textGrey)
-                    Text("Hi James")
-                        .font(.boldTitle)
+                    Text(NSLocalizedString("greetings", comment: ""))     //.font(.poppins_regular_14)
                         .foregroundColor(Color.textBlack)
                 }
                 Spacer()

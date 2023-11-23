@@ -1,11 +1,22 @@
 import SwiftUI
 
 struct SearchDoctor: View {
+    @State private var isSearch = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+            HStack(alignment: .center, spacing: 12)
+            {
+                Image("search-normal")
+                    .padding(.trailing, 4)
+                TextField(NSLocalizedString("text_field", comment: ""), text: $isSearch)
+                    //.font(.poppins_regular_14)
+                    .foregroundColor(Color.textGrey)
+            }
+            .padding(16)
+            .frame(width: imageSize.searchWidthSize, alignment: .leading)
+            .background(Color.searchGrey)
+            .cornerRadius(12)
+        }
 }
-
 struct SearchDoctor_Previews: PreviewProvider {
     static var previews: some View {
         SearchDoctor()
