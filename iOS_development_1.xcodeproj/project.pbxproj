@@ -10,7 +10,7 @@
 		242F76952B285B000086DCE7 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 242F76942B285B000086DCE7 /* Poppins-Medium.ttf */; };
 		242F76972B285B0E0086DCE7 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 242F76962B285B0E0086DCE7 /* Poppins-Regular.ttf */; };
 		242F76992B285B1E0086DCE7 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 242F76982B285B1E0086DCE7 /* Poppins-Bold.ttf */; };
-		242F769B2B285B970086DCE7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 242F769A2B285B970086DCE7 /* Info.plist */; };
+		242F76AA2B2867C10086DCE7 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 242F76A92B2867C10086DCE7 /* info.plist */; };
 		24C78B642B062B7E0069E12D /* iOS_development_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78B632B062B7E0069E12D /* iOS_development_1App.swift */; };
 		24C78B662B062B7E0069E12D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78B652B062B7E0069E12D /* ContentView.swift */; };
 		24C78B682B062B810069E12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C78B672B062B810069E12D /* Assets.xcassets */; };
@@ -31,7 +31,7 @@
 		242F76942B285B000086DCE7 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		242F76962B285B0E0086DCE7 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		242F76982B285B1E0086DCE7 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		242F769A2B285B970086DCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242F76A92B2867C10086DCE7 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		24C78B602B062B7E0069E12D /* iOS_development_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_development_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C78B632B062B7E0069E12D /* iOS_development_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_development_1App.swift; sourceTree = "<group>"; };
 		24C78B652B062B7E0069E12D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +79,7 @@
 		24C78B622B062B7E0069E12D /* iOS_development_1 */ = {
 			isa = PBXGroup;
 			children = (
+				242F76A92B2867C10086DCE7 /* info.plist */,
 				242F76942B285B000086DCE7 /* Poppins-Medium.ttf */,
 				242F76962B285B0E0086DCE7 /* Poppins-Regular.ttf */,
 				242F76982B285B1E0086DCE7 /* Poppins-Bold.ttf */,
@@ -120,7 +121,6 @@
 		24C78B9A2B0E80440069E12D /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
-				242F769A2B285B970086DCE7 /* Info.plist */,
 			);
 			path = CustomFonts;
 			sourceTree = "<group>";
@@ -187,9 +187,9 @@
 				242F76992B285B1E0086DCE7 /* Poppins-Bold.ttf in Resources */,
 				242F76952B285B000086DCE7 /* Poppins-Medium.ttf in Resources */,
 				24C78B682B062B810069E12D /* Assets.xcassets in Resources */,
+				242F76AA2B2867C10086DCE7 /* info.plist in Resources */,
 				3F7FF5062B0F35C9006BF0ED /* Localizable.strings in Resources */,
 				242F76972B285B0E0086DCE7 /* Poppins-Regular.ttf in Resources */,
-				242F769B2B285B970086DCE7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
